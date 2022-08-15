@@ -1,0 +1,30 @@
+<!-- <div class="container">
+    <input type="text" name="" id="" [(ngModel)]="toDo" #toDoInput>
+    <button class="btn btn-primary" (click)="addToDo(toDoInput.value)">Submit</button>
+    <div *ngFor="let toDo of toDoList; let i=index">
+        <li style="list-style-type: none;">
+            <input type="checkbox" [(ngModel)]="isChecked[i]"> <span [ngClass]="{toDoStyle: isChecked[i]}">{{toDo}}</span>
+            <button (click)="removeToDo(i)">Remove</button>
+        </li>
+    </div>
+    <hr>
+    <p>{{count}} items left</p>
+</div> -->
+
+<!-- <div class="container">
+    <input type="text" name="" id="" [(ngModel)]="toDo" #toDoInput>
+    <button class="btn btn-primary" (click)="addToDo(toDoInput.value)">Submit</button>
+    <div *ngFor="let toDo of toDoList; let i=index">
+        <li style="list-style-type: none;">
+            <input type="checkbox" (click)="changed($event, i)"> <span>{{toDo}}</span>
+            <button (click)="removeToDo(i)">Remove</button>
+        </li>
+    </div>
+    <hr>
+    <p>{{count}} items left</p>
+</div> -->
+
+<div class="todoapp">
+    <app-header></app-header>
+    <app-main> </app-main>
+</div>
